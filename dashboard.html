@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="vitals.html">Vitals</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <!-- Replace Jinja tags with span class mapped to main.js -->
+        <h1>Welcome Back, <span class="user-name-display"></span>!</h1>
+        <p class="subtitle">Here's your health overview for today.</p>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon vitals"></div>
+                <h3>Today's Vitals</h3>
+                <p>All readings are stable. No anomalies detected.</p>
+                <a href="vitals.html" class="card-link">View Details &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon activity"></div>
+                <h3>Activity Log</h3>
+                <p>Your latest activity logs and step counts.</p>
+                <a href="activity.html" class="card-link">View Activity &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon alerts"></div>
+                <h3>New Alerts</h3>
+                <p>You have <strong>0 new alerts</strong>. All systems normal.</p>
+                <a href="alerts.html" class="card-link">Manage Alerts &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon feedback"></div>
+                <h3>Physician Feedback</h3>
+                <p>Dr. Smith reviewed your data and left a new note.</p>
+                <a href="feedback.html" class="card-link">Read Note &rarr;</a>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            Made with <span class="heart-icon">❤️</span> by Prateek
+        </footer>
+    </main>
+
+    <!-- Use universal script -->
+    <script src="main.js"></script>
+</body>
+</html>

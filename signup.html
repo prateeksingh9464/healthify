@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncHealth - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+    <button id="theme-toggle" class="theme-toggle-btn" style="position: absolute; top: 20px; right: 20px; z-index: 100;" title="Toggle Dark/Light Mode">
+        <span id="theme-icon">🌙</span>
+    </button>
+
+    <div class="login-container">
+        <div class="info-panel">
+            <h1>Join SyncHealth</h1>
+            <p>Get started with your synchronized health journey today.</p>
+        </div>
+
+        <div class="form-panel">
+            <div class="form-content">
+                <h2>Create Account</h2>
+                
+                <form id="signup-form">
+                    <div class="input-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Create Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="secret_answer">Secret Answer (for password reset)</label>
+                        <input type="text" id="secret_answer" placeholder="e.g., Your first pet's name" required>
+                    </div>
+                    <button type="submit" class="login-button">Create Account</button>
+                </form>
+
+                <div class="signup-prompt">
+                    <p>Already have an account? <a href="index.html">Log In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

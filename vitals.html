@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitals - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="vitals.html" class="active">Vitals</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn"><span id="theme-icon">🌙</span></button></li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <h1>Today's Vitals</h1>
+        <p class="subtitle">Here is a snapshot of your demo vitals.</p>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Heart Rate</h3>
+                <p style="font-size: 2rem; font-weight: 600; color: #005A8D;">72 <span style="font-size: 1rem; font-weight: 400; color: var(--subtitle-color);">BPM</span></p>
+                <p>Your resting heart rate is in the normal range.</p>
+            </div>
+            <div class="card">
+                <h3>Blood Pressure</h3>
+                <p style="font-size: 2rem; font-weight: 600; color: #005A8D;">120/80 <span style="font-size: 1rem; font-weight: 400; color: var(--subtitle-color);">mmHg</span></p>
+                <p>Your blood pressure is in the ideal range.</p>
+            </div>
+            <div class="card">
+                <h3>Blood Oxygen</h3>
+                <p style="font-size: 2rem; font-weight: 600; color: #005A8D;">98<span style="font-size: 1rem; font-weight: 400; color: var(--subtitle-color);">%</span></p>
+                <p>Oxygen saturation is excellent.</p>
+            </div>
+        </div>
+
+        <footer class="site-footer">Made with <span class="heart-icon">❤️</span> by Prateek</footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

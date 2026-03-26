@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Log - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="activity.html" class="active">Activity</a></li>
+            <li><a href="vitals.html">Vitals</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <h1>Activity Log for <span class="user-name-display"></span></h1>
+        <p class="subtitle">Log new activities and view your history.</p>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Log New Activity</h3>
+                <!-- Changed to use ID instead of POST Action -->
+                <form id="activity-form">
+                    <div class="input-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="steps">Steps Taken</label>
+                        <input type="number" id="steps" placeholder="e.g., 7500" required
+                               style="width: 100%; padding: 0.85rem 1rem; border: 1px solid var(--input-border); background: var(--input-bg); color: var(--text-color); border-radius: 8px; font-size: 1rem; font-family: 'Poppins', sans-serif;">
+                    </div>
+                    <button type="submit" class="login-button" style="margin-top: 1.5rem;">Save Activity</button>
+                </form>
+            </div>
+
+            <div class="card" style="grid-column: span 2 / auto;">
+                <h3>Your Activity History</h3>
+                <!-- Changed to an empty unordered list that JS populates -->
+                <ul id="activity-list" style="list-style: none; margin-top: 1rem; max-height: 400px; overflow-y: auto;">
+                    <!-- JS injects rows here -->
+                </ul>
+            </div>
+        </div>
+        
+        <footer class="site-footer">
+            Made with <span class="heart-icon">❤️</span> by Prateek
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

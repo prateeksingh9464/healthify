@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="vitals.html">Vitals</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn"><span id="theme-icon">🌙</span></button></li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <h1>Physician Feedback</h1>
+        <p class="subtitle">Notes from your healthcare provider.</p>
+
+        <div class="card" style="max-width: 800px; margin: 2rem auto;">
+            <h3>Demo Note from Dr. Smith</h3>
+            <p style="font-size: 0.9rem; color: var(--subtitle-color); margin-bottom: 1rem;">Posted: Today</p>
+            <p>"Hi <span class="user-name-display"></span>,</p>
+            <p style="margin-top: 1rem;">Just reviewed your activity logs from last week. Great job hitting your step count 5 out of 7 days! I see your resting heart rate was stable. Keep up the consistent effort, it's clearly paying off."</p>
+            <p style="margin-top: 1rem;">- Dr. Smith</p>
+        </div>
+
+        <footer class="site-footer">Made with <span class="heart-icon">❤️</span> by Prateek</footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="vitals.html">Vitals</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="settings.html" class="active">Settings</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn"><span id="theme-icon">🌙</span></button></li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <h1>Settings</h1>
+        <p class="subtitle">Manage your account preferences.</p>
+
+        <div class="card" style="max-width: 600px; margin: 2rem auto;">
+            <h3>Change Password</h3>
+            <p>You can change your password using the "Forgot Password" link on the login page, or by entering your old and new password here (this form is just a demo).</p>
+            
+            <form style="margin-top: 2rem;" onsubmit="event.preventDefault(); alert('This is a demo page. Please use the Forgot Password link on the login page to actually reset your password.');">
+                <div class="input-group">
+                    <label for="old_pass">Old Password</label>
+                    <input type="password" id="old_pass" required style="background: var(--input-bg); color: var(--text-color); border: 1px solid var(--input-border);">
+                </div>
+                 <div class="input-group">
+                    <label for="new_pass">New Password</label>
+                    <input type="password" id="new_pass" required style="background: var(--input-bg); color: var(--text-color); border: 1px solid var(--input-border);">
+                </div>
+                <button type="submit" class="login-button" style="margin-top: 1rem;">Update Password</button>
+            </form>
+        </div>
+
+        <footer class="site-footer">Made with <span class="heart-icon">❤️</span> by Prateek</footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

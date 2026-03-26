@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncHealth - Login</title>
+    <!-- Update CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+    <button id="theme-toggle" class="theme-toggle-btn" style="position: absolute; top: 20px; right: 20px; z-index: 100;" title="Toggle Dark/Light Mode">
+        <span id="theme-icon">🌙</span>
+    </button>
+
+    <div class="login-container">
+        <div class="info-panel" style="position: relative;">
+            <h1>SyncHealth</h1>
+            <p>Your personal health, synchronized. Welcome back, user.</p>
+            <div class="login-footer">Made with <span class="heart-icon">❤️</span> by Prateek</div>
+        </div>
+
+        <div class="form-panel">
+            <div class="form-content">
+                <h2>User Login</h2>
+                <!-- Replace action with an ID for main.js to target -->
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="username">Username or Email</label>
+                        <input type="text" id="username" placeholder="e.g. John or john@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="options">
+                        <a href="forgot_password.html" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+
+                <div class="signup-prompt">
+                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link the logic script -->
+    <script src="main.js"></script>
+</body>
+</html>

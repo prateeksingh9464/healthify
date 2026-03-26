@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - SyncHealth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <div id="theme-toast" class="theme-toast">Dark Mode Enabled 🌙</div>
+
+    <nav class="navbar">
+        <div class="logo">SyncHealth</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="vitals.html">Vitals</a></li>
+            <li><a href="alerts.html" class="active">Alerts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><button id="theme-toggle" class="theme-toggle-btn"><span id="theme-icon">🌙</span></button></li>
+        </ul>
+        <div class="profile">
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+    </nav>
+
+    <main class="dashboard-content" style="min-height: 80vh; display: flex; flex-direction: column;">
+        <h1>New Alerts</h1>
+        <p class="subtitle">All your important notifications will appear here.</p>
+
+        <div class="card" style="max-width: 800px; margin: 2rem auto;">
+            <h3>No New Alerts</h3>
+            <p>You have <strong>0 new alerts</strong>. All systems normal.</p>
+            <p>If your vitals data (like heart rate or blood pressure) goes outside your set range, an alert will be generated here for you and your physician to review.</p>
+        </div>
+
+        <footer class="site-footer">Made with <span class="heart-icon">❤️</span> by Prateek</footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
